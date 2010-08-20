@@ -1,3 +1,4 @@
+#labels Featured
 = Development Introduction =
 
 CodeProject For Android (CPForAndroid) is now in active development.  If you are interested in participating in this project email joesox.
