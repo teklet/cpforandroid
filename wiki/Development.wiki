@@ -10,7 +10,8 @@ We ask that all developers use the following guidelines to ensure stable version
 === CPForAndroidDevelopment:===
   # Work with a copy of the latest version CPForAndroid Eclipse 3.4 project.
   # Thoroughly test your working copy.
-  # Repeat step 1 - 3 until no bugs.
+  # Increment 'android:versionName' in CPForAndroidManifest.xml
+  # Repeat step 1 - 4 until no bugs.
   # Commit changes.
   # Update issue trackers.
   # If needed, make sure joesox updates CPForAndroid websites with current documentation
