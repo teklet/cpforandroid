@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, CPForAndroid!</string>
+    <string name="app_name">CPForAndroid</string>
+<color name="black">#000000</color>
+<color name="white">#ffffff</color>
+<color name="bold_orange">#ff9900</color>
+<color name="light_orange">#FFCC66</color>
+<string name="menu">Menu</string>
+<string name="quit">Quit</string>
+</resources>
