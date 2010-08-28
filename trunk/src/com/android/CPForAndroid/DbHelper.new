@@ -1,0 +1,79 @@
+//////////////////////////////////////////
+//				CPForAndroid			//
+//		DbHelper Class Revision: 92		//
+//     Copyright (C) 2010 JPS III       //
+//         and development team         //
+// GNU General Public License version 3 //
+//////////////////////////////////////////
+// http://www.sqlite.org/sqlite.html
+// C:\android-sdk-windows\tools\adb.exe
+//"DROP DATABASE
+
+
+package com.android.CPForAndroid;
+import android.content.Context;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteOpenHelper;
+import android.database.sqlite.SQLiteDatabase.CursorFactory;
+import android.util.Log;
+
+public class DbHelper extends SQLiteOpenHelper
+{
+	private static final int DATABASE_VERSION = 1;
+	private String _sql = "";
+	public final String tag = "DbHelper";//tag is used for debugging
+	
+	
+	/** CONSTRUCTOR **/
+	public DbHelper(Context context, String sql, String db_name) 
+	{
+	    super(context, db_name, null, 1);
+	    this._sql = sql;
+	}
+
+	@Override
+    public void onCreate(SQLiteDatabase db)
+    {
+    	try
+    	{
+    		db.execSQL(this._sql);
+        }catch (Exception e)
+		{
+			Log.e(tag,"onCreate execSQL Exception [" + e.getMessage() + "]");
+		} finally {
+            if (db != null)
+                db.close();
+        }
+    	
+        
+    }
+
+    @Override
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
+    {
+    	/*
+    	// THIS IS AN UPGRADE TEMPLATE BELOW; YOU WILL NEED TO CUSTOMIZE THIS FOR YOUR DB UPGRADE
+    	String table_name = "MY_NEWNAME";		//CUSTOMIZE
+    	String col_name   = "MY_NEWCOLNAME";	//CUSTOMIZE
+		if (oldVersion >= newVersion)
+			return;
+		String sql = null;
+		if (oldVersion == 1) 
+			sql = "alter table " + table_name + " add "+ col_name +" text;";//Changes table name to table_name and adds a column col_name
+		if (oldVersion == 2)
+			sql = "";
+		Log.d("EventsData", "onUpgrade	: " + sql);
+		if (sql != null)
+			db.execSQL(sql);
+		*/
+    }
+    
+    public void deleteAll(SQLiteDatabase db, String table_name) 
+    {
+    	db.delete(table_name, null, null);
+    }
+    
+
+    
+}
