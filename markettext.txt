@@ -1,0 +1,29 @@
+TITLE:
+CPForAndroid++
+
+App for Interacting with CodeProject.com! Follow the buzzing activity at your favorite programming community. Easy on your eyes and fun.
+Current Features include:
+    * View Latest Article RSS feed
+    * View Lounge RSS feed
+    * Removes read items
+    * View details on each item with optional jump url
+    
+Recent Changes:
+    * Mark All As Read menu button
+    * Facebook, Google, Twitter, Windows Live, CP Email link sharing 
+    
+    
+Promo text:
+Follow the buzzing activity on Codeproject, Easy on your eyes and fun.
+
+Application Type: Applications
+Category: Social
+Free
+
+
+website:
+http://cpforandroid.googlecode.com
+
+https://market.android.com/details?id=org.android.CPForAndroidPlusPlus
+
+settings -> applications -> manage applications -> clear data, uninstall

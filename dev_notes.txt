@@ -1,0 +1,29 @@
+http://www.facebook.com/sharer.php?u=URL
+http://www.codeproject.com/images/AddTo_Facebook.png
+
+http://twitter.com/login?redirect_after_login=%2Fhome%3Fstatus%3DCurrently%2520reading%2520URL
+http://www.codeproject.com/images/AddTo_Twitter.gif
+
+https://www.google.com/bookmarks/mark?bkmk=URL
+http://www.codeproject.com/images/AddTo_Google.png
+
+<a href="mailto: &subject= &body="></a>
+http://www.codeproject.com/script/common/TellFriend.aspx
+http://www.codeproject.com/images/envelope.gif
+
+http://www.codeproject.com/script/Bookmarks/Add.aspx?obid=153554&obtid=2&action=AddBookmark&bio=true
+
+
+http://www.codeproject.com/script/Bookmarks/Add.aspx?obid=153407&obtid=2&action=AddBookmark&bio=true
+
+
+<td><a href=\"mailto: &subject="+ Uri.encode((String)this._bundle.get("title")) +" &body="+Uri.encode("Hi, thought you would be interested in the following Article:\n") + urilink+"\"><img src=\"http://www.codeproject.com/images/envelope.gif\" style=\"width: 16px; height: 16px;\" /></a></td>
+
+<td><a href=\"https://office.live.com/sharefavorite.aspx/.SharedFavorites??url="+ urilink+"&title="+ Uri.encode((String)this._bundle.get("title")) +"&marklet=1&mkt=en-us&top=1\"><img src=\"http://www.codeproject.com/images/AddTo_Live.png\" style=\"width: 16px; height: 16px;\" /></a></td>
+
+NEW IN v1.18:
+    * Mark All As Read menu button
+    * Facebook, Google, Twitter, Windows Live, CP Email link sharing 
+    
+    
+settings -> applications -> manage applications -> clear data, uninstall
